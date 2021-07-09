@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Student</title>
+<style>
+nav {
+  float: right;
+  width: 30%;
+  height: auto;
+  background-color: rgb(245, 245, 245);  
+  padding: 10px;
+  margin:50px;
+  margin-right:50px ;
+  align-items: center;
+  border-radius: 2%;
+  font-size: 14px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 10px;
+  align-items: center;
+}
+button {
+  font-size: 14px; 
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 60%;
+  margin:10px;
+  height: 560px; 
+}
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+<section>
+  <nav>
+    <ul>
+      <li><h4 style="text-align:center;font-weight: 700;color:#172949;" >Click to start the test </h4><hr></li>
+      <li></li><button type="button" class="btn btn-primary btn-lg btn-block" style="font-size: larger;padding:10px;font-weight: 700;" [routerLink]="['/Quiz', 1]">Advanced Algorithm <br> Analysis (AAC)</button>
+      <br>
+      <li></li><button type="button" data-toggle="tooltip" data-placement="left" style="font-size: larger;padding:10px;font-weight: 700;" class="btn btn-dark btn-lg btn-block" [routerLink]="['/Quiz', 2]">Advanced Computer <br> Networks (ACN)</button>
+      <br>
+      <li></li><button type="button" data-toggle="tooltip" data-placement="left" style="font-size: larger;padding:10px;font-weight: 700;" class="btn btn-info btn-lg btn-block" [routerLink]="['/Quiz', 3]"> Object Oriented <br> Analysis and Desgin (OOAD)</button>
+      <br>
+      <li></li><button title="Visit sometime later!" type="button" style="font-size: larger;padding:10px;font-weight: 700;"class="btn btn-success btn-lg btn-block"[routerLink]="['/Quiz', 4]">Advanced Operating <br> Systems (AOS)</button>
+      <li><hr><button class="btn btn-danger btn-md btn-block" routerLink="/">Logout</button></li>
+    </ul>
+  </nav>  
+  <article>
+    <h1 class="display-3" style="font-family: 'Rubik';">Welcome Student</h1>
+    <p>We are delighted to have you among us. On behalf of all the members and the management, we would like to extend our warmest welcome and good wishes!</p>
+    <p>This platform helps you to know your command on a subject and improve yourself with more practice.<br>Do read and then give an attempt.</p> <br>
+    <img src="./assets/bg.png" width="400px" alt="" style="margin-left: 200px;">
+  </article>
+</section>
+</body>
+</html>

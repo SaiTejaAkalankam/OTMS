@@ -1,0 +1,64 @@
+<title>Update Question</title>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="/AdminHome">Home</a>
+        <a class="nav-item nav-link" routerLink="/QuestionList">Help(Question Details)</a>
+        <a class="nav-item nav-link" routerLink="/Gettests">Help(Test Details)</a>
+    </div>
+</nav>
+<html>
+ <style>
+ </style>
+  <body>
+     <br>
+         <div class="tablecontent shadow-lg py-4 px-3">
+            <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+               <div><h4 style= "color:white;">Update a Question</h4></div>
+               </nav>
+               <br>
+            <table class="table table-sm">
+               <tr>
+                  <th>Test Id</th>
+                  <td><input type=text [(ngModel)]="question.testId"></td>
+               </tr>
+               <tr>
+                  <th>Question Id</th>
+                  <td><input type=text [(ngModel)]="question.questionId"></td>
+               </tr>
+               <tr>
+                  <th>Question Content</th>
+                  <td><input type=text [(ngModel)]="question.questionContent"></td>
+               </tr>
+               <tr>
+                  <th>Option 1</th>
+                  <td><input type=text [(ngModel)]="question.option1"></td>
+               </tr>
+               <tr>
+                  <th>Option 2</th>
+                  <td><input type=text [(ngModel)]="question.option2"></td>
+               </tr>
+               <tr>
+                  <th>Option 3</th>
+                  <td><input type=text [(ngModel)]="question.option3"></td>
+               </tr>
+                <tr>
+                  <th>Marks</th>
+                  <td><input type=text [(ngModel)]="question.marks"></td>
+               </tr>
+                <tr>
+                  <th>Answer (1 / 2 / 3)</th>
+                  <td><input type=text [(ngModel)]="question.answerOption"></td>
+               </tr>
+               <tr>
+                  <td colspan="2">
+                     <br>
+                     <button data-toggle="tooltip" data-placement="left" title="Just enter the QuestionId, the rest of the details will be auto-displayed" class="btn btn-primary" type="button" (click)="getQuestion()">Get Question Details</button>
+                     &nbsp;
+                     <button class="btn btn-info" type="button" (click)="insertQuestion()">Update Question Details</button>
+                  </td>
+               </tr>            
+            </table>
+         </div>
+         <br><br><br>
+  </body>
+</html>

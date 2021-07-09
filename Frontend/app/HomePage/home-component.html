@@ -1,0 +1,54 @@
+<head>
+  <title>Faculty</title>
+</head>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link active" routerLink="/AdminHome">Home</a>
+        <a class="nav-item nav-link" routerLink="/QuestionList">Help(Question Details)</a>
+        <a class="nav-item nav-link" routerLink="/Gettests">Help(Test Details)</a>
+        <a class="nav-item nav-link" routerLink="/">Logout</a>
+    </div>
+</nav>
+<style>
+  .container {
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+.success {
+  background-color: #ddffdd;
+  border-left: 10px solid #4CAF50;
+  width:auto;
+}
+.btn{
+  width :300px;
+  font-size: 14px;
+  align-self: center;
+  padding: 10px;
+  font-size: medium;
+  font-weight: 600;
+  margin: 10px;
+}
+</style>
+<br>
+<div class="success">
+  <p><strong>Login Successful!</strong> Welcome, Faculty !</p>
+</div>
+<div style="text-align:center">
+</div>
+<br>
+<div class="container">
+<div class="text-center">
+  <br>
+  <h3>Tools for Tests</h3>
+<button type="button" class="btn btn-success btn-lg " routerLink="/Addtest"><i class="fa fa-plus-square fa-lg" aria-hidden="true"></i><br>Add Test Details</button>
+<button type="button" class="btn btn-info btn-lg " routerLink="/Updatetest"><i class="fa fa-pencil-square fa-lg" aria-hidden="true"></i><br>Update Test Details</button>
+<button type="button" class="btn btn-danger btn-lg " routerLink="/Deletetest"><i class="fa fa-trash fa-lg" aria-hidden="true"></i><br>Delete Test Details</button>
+<br>
+<hr>
+<h3>Tools for Questions</h3>
+<button type="button" class="btn btn-success btn-lg " routerLink="/Insert"><i class="fa fa-plus fa-lg" aria-hidden="true"></i><br>Add Question Details</button>
+<button type="button" class="btn btn-info btn-lg " routerLink="/Update"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i><br>Update Question Details</button>
+<button type="button" class="btn btn-danger btn-lg " routerLink="/Question"><i class="fa fa-trash-o fa-lg" aria-hidden="true"></i><br>Delete Question Details</button>
+</div>
+<br>
+</div>
